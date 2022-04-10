@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'post/:title', component: BlogPostComponent },
   { path: '1234', component: CreatePostComponent },
-  { path: '',   redirectTo: 'blog', pathMatch: 'full' }
+  { path: '',   redirectTo: '/blog', pathMatch: 'full' }
 ];
 
 @NgModule({
