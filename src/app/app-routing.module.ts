@@ -7,12 +7,12 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 
 const routes: Routes = [
+  { path: '',   redirectTo: '/blog', pathMatch: 'full' },
   { path: 'personal-data', component: PersonalDataComponent },
   { path: 'projects', component: MyProjectsComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'post/:title', component: BlogPostComponent },
-  { path: '1234', component: CreatePostComponent },
-  { path: '',   redirectTo: '/blog', pathMatch: 'full' }
+  { path: '1234', component: CreatePostComponent }
 ];
 
 @NgModule({
