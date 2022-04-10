@@ -1,0 +1,8 @@
+<div class="paper">
+  <h1 style="text-align: center">{{ post.title }}</h1>
+  <p style="text-align: right">{{ post.date }}</p>
+    <mat-divider style="margin-bottom: 10px;"></mat-divider>
+  <markdown [src]="post.contentPath"></markdown>
+</div>
+
+<router-outlet></router-outlet>

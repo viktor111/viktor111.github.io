@@ -1,0 +1,95 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Json Viewer",
+            "technologies": [
+                "react",
+                "js",
+                "html",
+                "css"
+            ],
+            "description": "This project allow you to display JSON and configure options such as coloring and spacing. It is created with react.",
+            "codeLink": "https://github.com/viktor111/simple-json-viewer",
+            "websiteLink": "https://viktor111.github.io/simple-json-viewer/",
+            "imageUrl": "assets/json-viewer.png"
+        },
+        {
+            "id": 2,
+            "name": "Lift Services System",
+            "technologies": [
+                "c#",
+                "ef core",
+                "microservices",
+                "DDD",
+                "mediatR",
+                "CQRS"
+            ],
+            "description": "Project made with microservices architecture that allows users to place orders, to contact support with tickets and browse catalog.",
+            "codeLink": "https://github.com/viktor111/LiftServicesSystem",
+            "websiteLink": "",
+            "imageUrl": "assets/lift-services-system.png"
+        },
+        {
+            "id": 3,
+            "name": "Apartment Renting System",
+            "technologies": [
+                "c#",
+                "ef core",            
+                "DDD",
+                "CQRS"
+            ],
+            "description": "This project follwo very close the principles of DDD. It allows for people to post house renting offers and for people to browse a catalog.",
+            "codeLink": "https://github.com/viktor111/ApartmentRentingSystem",
+            "websiteLink": "",
+            "imageUrl": "assets/ddd.png"
+        },
+        {
+            "id": 4,
+            "name": "QuestionZ",
+            "technologies": [
+                "React",
+                "Firebse NoSQL"            
+            ],
+            "description": "This project is built with react and firebase it allows people to post anonymouse questions and to get answers.",
+            "codeLink": "https://github.com/viktor111/QuestionZ",
+            "websiteLink": "https://quotez-94a47.web.app/questions",
+            "imageUrl": "assets/questionZ.png"
+        },
+        {
+            "id": 5,
+            "name": "ToDo react app",
+            "technologies": [
+                "React"           
+            ],
+            "description": "This is one of my first projects using react.",
+            "codeLink": "https://github.com/viktor111/todo-react-app",
+            "websiteLink": "https://viktor111.github.io/todo-react-app/?",
+            "imageUrl": "assets/todo.png"
+        },
+        {
+            "id": 6,
+            "name": "Tech Store API",
+            "technologies": [
+                "C#",
+                "WebAPI",
+                "SqlServer"           
+            ],
+            "description": "This is the first project I did with WebAPI it is backedn for tech store. A store for selling PC parts.",
+            "codeLink": "https://github.com/viktor111/TechStore",
+            "websiteLink": "https://techstore-7e952.web.app/Products/All",
+            "imageUrl": "assets/techstore.png"
+        },
+        {
+            "id": 7,
+            "name": "Tech Store Client",
+            "technologies": [
+                "React"
+            ],
+            "description": "This is the client made with react for TechStore",
+            "codeLink": "https://github.com/viktor111/TechStore-React",
+            "websiteLink": "https://techstore-7e952.web.app/Products/All",
+            "imageUrl": "assets/techstore.png"
+        }
+    ]
+}

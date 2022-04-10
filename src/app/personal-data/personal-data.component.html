@@ -1,0 +1,64 @@
+<div class="paper">
+  <h1 class="name-heading">{{ personalData.name }}</h1>
+  <img class="my-image" mat-card-xl-image src="{{ personalData.imageUrl }}" />
+  <p class="description">{{ personalData.description }}</p>
+  <div style="padding-bottom: 30px" class="row">
+    <div class="col-lg-6 col-sm-12">Email: {{ personalData.email }}</div>
+    <div style="text-align: right" class="col-lg-6 col-sm-12">
+      PhoneNumber: {{ personalData.phoneNumber }}
+    </div>
+    <div class="col-lg-6 col-sm-12">Country: {{ personalData.country }}</div>
+    <div style="text-align: right" class="col-lg-6 col-sm-12">
+      City: {{ personalData.city }}
+    </div>
+  </div>
+
+  <div style="padding-bottom: 60px">
+    <a
+      style="float: left"
+      color="primary"
+      mat-button
+      href="{{ personalData.githubLink }}"
+      >GitHub</a
+    >
+    <a
+      style="float: right"
+      color="primary"
+      mat-button
+      href="{{ personalData.linkedInLink }}"
+      >LinkedIn</a
+    >
+  </div>
+  <!-- company: string
+    position: string
+    dateFrom: string
+    dateTo: string
+    technologies: string[]
+    description: string -->
+  <mat-divider></mat-divider>
+  <h1 class="heading-1">Work Experince</h1>
+  <div style="padding: 30px;" *ngFor="let work of personalData.workExperiance">
+    <mat-card     
+      color="primary"
+      class="post-card"
+      style="background-color: rgb(248, 241, 255)"
+    >
+      <mat-card-title style="text-align: center"
+        >{{ work.position }} at {{ work.company }}</mat-card-title
+      >
+      <mat-card-content>
+          <mat-card-subtitle>From: {{work.dateFrom}}</mat-card-subtitle>
+          <mat-card-subtitle>To: {{work.dateTo}}</mat-card-subtitle>
+
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip *ngFor="let tag of work.technologies">{{ tag }}</mat-chip>
+        </mat-chip-list>
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-footer style="padding: 10px;"> {{ work.description }}</mat-card-footer>
+    </mat-card>
+  </div>
+  
+</div>
+
+<router-outlet></router-outlet>

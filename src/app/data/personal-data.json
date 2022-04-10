@@ -1,0 +1,38 @@
+{
+    "name": "Viktor Draganov",
+    "imageUrl": "assets/my-image.jpg",
+    "description": "I am a software engineer with .NET I also have experince in React and some Angular. I like learning latest technologies and strive to do the best work.",
+    "country": "Bulgaria",
+    "city": "Stara Zagora",
+    "birthDay": "11.12.1999",
+    "email": "swifrorlilko@gmail.com",
+    "phoneNumber": "0895313156",
+    "linkedInLink": "https://www.linkedin.com/in/viktor-draganov-9b28811a2/",
+    "githubLink": "https://github.com/viktor111",
+    "workExperiance": [
+        {
+            "company": "NexGIS",
+            "position": "Web Developer",
+            "dateFrom": "Feb 2020",
+            "dateTo": "Mar 2021",
+            "technologies":["C#", "react", "jquery", "postgreSQL", "OpenProject"],
+            "description": "Worked with .Net and react in creating new web application based on older desktop application."
+        },
+        {
+            "company": "Indeavr",
+            "position": ".Net Developer",
+            "dateFrom": "Aug 2021",
+            "dateTo": "Jan 2022",
+            "technologies":["C#", "epiServer", "SqlServer", "Jira"],
+            "description": "Worked in creating backend structure and API's for CMS."
+        },
+        {
+            "company": "eLando",
+            "position": "Software Engineer",
+            "dateFrom": "Mar 2022",
+            "dateTo": "Present",
+            "technologies":["C#", "SqlServer", "AKS", "Kubernetes", "Docker", "Microservices"],
+            "description": "Working on new project the job involves creating microservices, api gateway's and deploying on Azure Kubernetes Service. "
+        }
+    ]
+}

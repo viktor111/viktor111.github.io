@@ -1,0 +1,17 @@
+<mat-card *ngFor="let project of projects" class="project-card">
+    <mat-card-title-group>
+      <mat-card-title>{{project.name}}</mat-card-title>
+      <mat-card-subtitle><mat-chip-list aria-label="Fish selection">
+        <mat-chip *ngFor="let tag of project.technologies">{{tag}}</mat-chip>                   
+      </mat-chip-list></mat-card-subtitle>     
+    </mat-card-title-group>
+    <img class="project-image" mat-card-xl-image src="{{project.imageUrl}}" >
+    <mat-card-content style="padding: 30px;">
+        {{project.description}}
+    </mat-card-content>
+    <mat-card-actions style="text-align: center;">
+        <a target="_blank" href="{{project.codeLink}}" color="primary" mat-button>Code</a>
+        <a *ngIf="project.hasWebLink" target="_blank" href="{{project.websiteLink}}" color="primary" mat-button>WebSite</a>
+      </mat-card-actions>
+  </mat-card>
+<router-outlet></router-outlet>
