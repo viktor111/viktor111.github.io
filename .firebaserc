@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "viktor-portfolio-4d288": {
+      "hosting": {
+        "my-angular-portfolio": [
+          "viktor-portfolio-4d288"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "viktor-portfolio-4d288"
+  }
+}

@@ -1,3 +1,21 @@
+<div style="padding-top: 10px;">
+  <mat-card>
+    <mat-card-title style="text-align: center;">Search by tags</mat-card-title>
+    <div style="padding-bottom: 10px;">
+      <button color="accent" (click)="clearTagSearch()" mat-raised-button>Clear</button>
+    </div>
+  <mat-card-content>
+    <mat-chip-list>
+      <mat-chip color="primary" *ngFor="let tag of tags" (click)="sortByTagName(tag.name)"  mat-raised-button>{{tag.name}} : {{tag.count}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+  <mat-card-footer>    
+  </mat-card-footer>
+  </mat-card>
+</div>
+
+
+<hr/>
 <div>
     <div *ngFor="let blogPost of blogPosts">
         <mat-card color="primary" class="post-card">

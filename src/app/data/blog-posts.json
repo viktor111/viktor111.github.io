@@ -1,31 +1,40 @@
 {
     "posts": [
         {
-            "title": "test post1",
-            "date": "1.1.2019",
+            "title": "Technologies I'm learning in 2022",
+            "date": "24.04.2022",
             "tags": [
-                "c#",
-                "angular"
+                "fun",
+                "listing"
             ],
-            "contentPath": "assets/blog/test.md"
+            "contentPath": "assets/blog/welcolme.md"
         },
         {
-            "title": "test post 2",
-            "date": "1.1.2009",
+            "title": "Kubernetes components. An in-depth look",
+            "date": "26.04.2022",
             "tags": [
-                "c#",
-                "ef core"
+                "kubernetes"
             ],
-            "contentPath": "assets/blog/test2.md"
+            "contentPath": "assets/blog/kubernetes-in-deapth.md"
         },
         {
-            "title": "test post 2",
-            "date": "1.1.2009",
+            "title": "Use HttpClient as service",
+            "date": "27.04.2022",
             "tags": [
                 "c#",
-                "ef core"
+                "httpclient"
             ],
-            "contentPath": "assets/blog/test2.md"
+            "contentPath": "assets/blog/httpclient-as-service.md"
+        },
+        {
+            "title": "Options model for appsettings.json",
+            "date": "27.04.2022",
+            "tags": [
+                "c#",
+                "options model",
+                "appsettings"
+            ],
+            "contentPath": "assets/blog/add-options-model.md"
         }
     ]
 }

@@ -26,7 +26,8 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-import { CreatePostComponent } from './create-post/create-post.component';
+import { CoursesComponent } from './courses/courses.component';
+import { FreeCourseComponent } from './free-course/free-course.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CreatePostComponent } from './create-post/create-post.component';
     MyProjectsComponent,
     BlogComponent,
     BlogPostComponent,
-    CreatePostComponent,
+    CoursesComponent,
+    FreeCourseComponent,
   ],
   imports: [
     BrowserModule,

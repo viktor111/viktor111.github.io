@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogComponent } from './blog/blog.component';
-import { CreatePostComponent } from './create-post/create-post.component';
+import { CoursesComponent } from './courses/courses.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'projects', component: MyProjectsComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'post/:title', component: BlogPostComponent },
-  { path: '1234', component: CreatePostComponent }
+  { path: 'courses', component: CoursesComponent }
 ];
 
 @NgModule({
