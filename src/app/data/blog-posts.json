@@ -1,14 +1,6 @@
 {
     "posts": [
-        {
-            "title": "Technologies I'm learning in 2022",
-            "date": "24.04.2022",
-            "tags": [
-                "fun",
-                "listing"
-            ],
-            "contentPath": "assets/blog/welcolme.md"
-        },
+
         {
             "title": "Kubernetes components. An in-depth look",
             "date": "26.04.2022",
@@ -28,13 +20,34 @@
         },
         {
             "title": "Options model for appsettings.json",
-            "date": "27.04.2022",
+            "date": "28.04.2022",
             "tags": [
                 "c#",
                 "options model",
                 "appsettings"
             ],
             "contentPath": "assets/blog/add-options-model.md"
+        },
+        {
+            "title": "How to set up core data in existing SwiftUi project",
+            "date": "20.05.2022",
+            "tags": [
+                "swift",
+                "core data",
+                "swiftui"
+            ],
+            "contentPath": "assets/blog/swift-exist-coredata.md"
+        },
+        {
+
+            "title": "How to estimate bitcoin transaction fee with c#",
+            "date": "12.07.2022",
+            "tags": [
+                "bitcoin",
+                "c#",
+                "crypto"
+            ],
+            "contentPath": "assets/blog/calculate-bitcoin-transaction-fee.md"
         }
     ]
 }
