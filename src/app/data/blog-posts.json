@@ -10,6 +10,18 @@
             "contentPath": "assets/blog/kubernetes-in-deapth.md"
         },
         {
+            "title": "Deploy ERC20 smart contracts on the Ethereum blockchain and call it using JS",
+            "date": "22.07.2022",
+            "tags": [
+                "crypto",
+                "ethereum",
+                "javascript",
+                "erc20",
+                "smart-contracts"
+            ],
+            "contentPath": "assets/blog/how-to-deploy-and-use-erc20-smart-contract.md" 
+        },
+        {
             "title": "Use HttpClient as service",
             "date": "27.04.2022",
             "tags": [
