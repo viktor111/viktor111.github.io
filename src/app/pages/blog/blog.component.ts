@@ -21,11 +21,13 @@ export class BlogComponent implements OnInit {
   blogPosts: BlogPost[];
   tags: Tag[];
   blogDataService: BlogDataService;
+  filterTagsByNameVal: string;
 
   constructor(blogDataService: BlogDataService) {
     this.blogDataService = blogDataService; 
     this.blogPosts = blogDataService.getAllPosts();
     this.tags = blogDataService.getTagsWithCount();
+    this.filterTagsByNameVal = '';
    }
 
    openDialog(){
@@ -37,6 +39,14 @@ export class BlogComponent implements OnInit {
 
    clearTagSearch(){
     this.blogPosts = this.blogDataService.getAllPosts();
+    this.filterTagsByNameVal = '';
+    this.filterTagsByName();
+   }
+
+   filterTagsByName(){
+      console.log(this.filterTagsByNameVal);
+      let tags = this.blogDataService.getTagsWithCount();
+      this.tags = this.blogDataService.searchTags(tags, this.filterTagsByNameVal);
    }
 
   ngOnInit(): void {
