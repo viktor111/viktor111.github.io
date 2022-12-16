@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BlogDataService } from '../../services/blog-data.service';
 import { BlogPost } from '../../types/blogPost';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { Tag } from '../../types/tag';
 import {
   trigger,
@@ -21,33 +21,39 @@ export class BlogComponent implements OnInit {
   blogPosts: BlogPost[];
   tags: Tag[];
   blogDataService: BlogDataService;
-  filterTagsByNameVal: string;
+  filterValue!: string;
 
   constructor(blogDataService: BlogDataService) {
-    this.blogDataService = blogDataService; 
+    this.blogDataService = blogDataService;
     this.blogPosts = blogDataService.getAllPosts();
     this.tags = blogDataService.getTagsWithCount();
-    this.filterTagsByNameVal = '';
-   }
 
-   openDialog(){
-   }
+  }
 
-   sortByTagName(tagName: string){
-     this.blogPosts = this.blogDataService.getByTags(tagName);
-   }
+  openDialog() {
+  }
 
-   clearTagSearch(){
+  sortByTagName(tagName: string) {
+    this.blogPosts = this.blogDataService.getByTags(tagName);
+  }
+
+  clearTagSearch() {
     this.blogPosts = this.blogDataService.getAllPosts();
-    this.filterTagsByNameVal = '';
-    this.filterTagsByName();
-   }
+    this.filterTagsByName(true);
+    this.filterValue = "";
+  }
 
-   filterTagsByName(){
-      console.log(this.filterTagsByNameVal);
-      let tags = this.blogDataService.getTagsWithCount();
-      this.tags = this.blogDataService.searchTags(tags, this.filterTagsByNameVal);
-   }
+  filterTagsByName(emptyTheTags = false) {
+    let tags = this.blogDataService.getTagsWithCount();
+    if (emptyTheTags) {
+      this.tags = this.blogDataService.searchTags(tags, "");
+      return;
+    }
+    else{
+      this.tags = this.blogDataService.searchTags(tags, this.filterValue);
+      return;
+    }
+  }
 
   ngOnInit(): void {
   }

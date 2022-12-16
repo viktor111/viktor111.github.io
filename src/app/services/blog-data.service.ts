@@ -20,7 +20,10 @@ export class BlogDataService {
     return post;
   }
 
-  searchTags(tags: Tag[], tagNameToSearch: string): Tag[] {
+  searchTags(tags: Tag[], tagNameToSearch: string | undefined): Tag[] {
+    if (!tagNameToSearch) {
+      return tags;
+    }
     let tagsFiltered = tags.filter(t => t.name.includes(tagNameToSearch));
 
     return tagsFiltered;
