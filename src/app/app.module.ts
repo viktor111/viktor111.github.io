@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { PersonalDataComponent } from './pages/personal-data/personal-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,12 +22,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
-import { MyProjectsComponent } from './my-projects/my-projects.component';
-import { BlogComponent } from './blog/blog.component';
+import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+import { BlogComponent } from './pages/blog/blog.component';
 import { MarkdownModule } from 'ngx-markdown';
-import { BlogPostComponent } from './blog-post/blog-post.component';
-import { CoursesComponent } from './courses/courses.component';
-import { FreeCourseComponent } from './free-course/free-course.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { CoursesComponent } from './pages/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +36,7 @@ import { FreeCourseComponent } from './free-course/free-course.component';
     MyProjectsComponent,
     BlogComponent,
     BlogPostComponent,
-    CoursesComponent,
-    FreeCourseComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,

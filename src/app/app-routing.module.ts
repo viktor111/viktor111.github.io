@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogPostComponent } from './blog-post/blog-post.component';
-import { BlogComponent } from './blog/blog.component';
-import { CoursesComponent } from './courses/courses.component';
-import { MyProjectsComponent } from './my-projects/my-projects.component';
-import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { CoursesComponent } from './pages/courses/courses.component';
+import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+import { PersonalDataComponent } from './pages/personal-data/personal-data.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: '/blog', pathMatch: 'full' },
