@@ -1,6 +1,14 @@
 {
     "posts": [
-
+        {
+            "title": "Redis Pub/Sub with C# Web API",
+            "date": "16.12.2022",
+            "tags": [
+                "redis",
+                "c#"
+            ],
+            "contentPath": "assets/blog/redis-pub-sub-cs-webapi.md"
+        },
         {
             "title": "Kubernetes components. An in-depth look",
             "date": "26.04.2022",

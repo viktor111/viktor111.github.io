@@ -6,21 +6,27 @@ import postsFile from '../data/blog-posts.json';
 @Injectable({
   providedIn: 'root',
 })
-export class BlogDataService{
-  constructor() {}
+export class BlogDataService {
+  constructor() { }
 
   getAllPosts(): BlogPost[] {
     let posts = postsFile as BlogPosts;
     return posts.posts;
   }
 
-  getByTitle(title: string): BlogPost{
+  getByTitle(title: string): BlogPost {
     let posts = postsFile as BlogPosts;
     let post = posts.posts.find((post => post.title === title))!
     return post;
   }
 
-  getByTags(tagNameToSearch: string): BlogPost[]{
+  searchTags(tags: Tag[], tagNameToSearch: string): Tag[] {
+    let tagsFiltered = tags.filter(t => t.name.includes(tagNameToSearch));
+
+    return tagsFiltered;
+  }
+
+  getByTags(tagNameToSearch: string): BlogPost[] {
     const blogPosts = postsFile as BlogPosts;
     const posts = blogPosts.posts;
 
@@ -31,7 +37,7 @@ export class BlogDataService{
     return postsByTags;
   }
 
-  getTagsWithCount(): Tag[]{
+  getTagsWithCount(): Tag[] {
     const blogPosts = postsFile as BlogPosts;
     const posts = blogPosts.posts;
 
@@ -43,30 +49,30 @@ export class BlogDataService{
 
       const tags = post.tags;
 
-      for(let j = 0; j < tags.length; j++){
+      for (let j = 0; j < tags.length; j++) {
         const tagName = tags[j];
         tagsNames.push(tagName);
       }
     }
 
-    for(let i = 0; i < tagsNames.length; i++){
-        let newTag: Tag = {
-          name: tagsNames[i],
-          count: 1
-        };
+    for (let i = 0; i < tagsNames.length; i++) {
+      let newTag: Tag = {
+        name: tagsNames[i],
+        count: 1
+      };
 
-        const conatinsNewTag = !!tags.find(tag => {
-          return tag.name === newTag.name
-        });
+      const conatinsNewTag = !!tags.find(tag => {
+        return tag.name === newTag.name
+      });
 
-        if(conatinsNewTag){
-          const indexOfExistTag = tags.findIndex(tag => tag.name === newTag.name);
+      if (conatinsNewTag) {
+        const indexOfExistTag = tags.findIndex(tag => tag.name === newTag.name);
 
-          tags[indexOfExistTag].count += 1;
-        }
-        else{
-          tags.push(newTag);
-        }
+        tags[indexOfExistTag].count += 1;
+      }
+      else {
+        tags.push(newTag);
+      }
     }
 
     return tags;
