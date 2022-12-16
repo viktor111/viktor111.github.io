@@ -27,6 +27,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { CoursesComponent } from './pages/courses/courses.component';
+import { VideosComponent } from './pages/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CoursesComponent } from './pages/courses/courses.component';
     MyProjectsComponent,
     BlogComponent,
     BlogPostComponent,
-    CoursesComponent
+    CoursesComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
