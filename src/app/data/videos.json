@@ -1,0 +1,20 @@
+{
+    "videos":[
+        {
+            "id":"1",
+            "name":"Redis with c#",
+            "description":"Implement applications with redis using c#",
+            "price":10,
+            "videoUrl":"https://www.youtube.com/watch?v=wLlovxa3VJ0&list=RD_pGaz_qN0cw&index=2",
+            "minutes":30
+        },
+        {
+            "id":"1",
+            "name":"Rust TCP Server/Client",
+            "description":"Showing how to implement a TCP server and client in rust",
+            "price":5,
+            "videoUrl":"https://www.youtube.com/watch?v=wLlovxa3VJ0&list=RD_pGaz_qN0cw&index=2",
+            "minutes":30
+        }
+    ]
+}

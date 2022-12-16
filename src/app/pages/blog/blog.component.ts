@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogDataService } from '../services/blog-data.service';
-import { BlogPost } from '../types/blogPost';
+import { BlogDataService } from '../../services/blog-data.service';
+import { BlogPost } from '../../types/blogPost';
 import {MatDialog} from '@angular/material/dialog';
-import { Tag } from '../types/tag';
+import { Tag } from '../../types/tag';
 import {
   trigger,
   state,
