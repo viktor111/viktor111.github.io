@@ -1,0 +1,9 @@
+{
+    "snippets": [
+        {
+            "title": "Get the current time",
+            "description": "The following example shows how to get the current time in seconds since the epoch.",
+            "codePaths": ["assets/snippets/cs/generic-blob-storage-class.txt", ""]
+        }
+    ]
+}

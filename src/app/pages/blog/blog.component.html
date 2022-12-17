@@ -4,7 +4,7 @@
     <input style="margin-bottom: 10px;" matInput placeholder="Filter tags" [(ngModel)]="filterValue"
       (ngModelChange)="filterTagsByName()">
     <div style="padding-bottom: 10px;">
-      <button color="accent" (click)="clearTagSearch()" mat-raised-button>Clear</button>
+      <button mat-raised-button matTooltip="Clears search and filters" color="accent" (click)="clearTagSearch()" >Clear</button>
     </div>
     <mat-card-content>
       <mat-chip-list>

@@ -17,10 +17,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
@@ -60,6 +61,7 @@ import { VideosComponent } from './pages/videos/videos.component';
     MatGridListModule,
     MatChipsModule,
     MatInputModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
