@@ -11,7 +11,13 @@ export class BlogDataService {
 
   getAllPosts(): BlogPost[] {
     let posts = postsFile as BlogPosts;
-    return posts.posts;
+
+    return posts.posts.sort((a, b) => {
+      let dateA = new Date(a.date.split(".").reverse().join("-"));
+      let dateB = new Date(b.date.split(".").reverse().join("-"));
+      return dateB.getTime() - dateA.getTime();
+    });
+
   }
 
   getByTitle(title: string): BlogPost {
